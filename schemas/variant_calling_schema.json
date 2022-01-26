@@ -132,10 +132,12 @@
           "enum": [
             "program_id",
             "submitter_donor_id",
-            "primary_site",
-            "vital_status",
-            "survival_time",
-            "cause_of_death"
+            "submitter_treatment_id",
+            "radiation_therapy_modality",
+            "radiation_therapy_type",
+            "anatomical_site_irradiated",
+            "radiation_therapy_dosage",
+            "radiation_therapy_fractions"
           ]
         }
       },
@@ -145,10 +147,10 @@
           "enum": [
             "program_id",
             "submitter_donor_id",
-            "primary_site",
-            "vital_status",
-            "survival_time",
-            "cause_of_death"
+            "submitter_treatment_id",
+            "procedure_type",
+            "procedure_site",
+            "residua_tumour_classification"
           ]
         }
       },
@@ -158,10 +160,11 @@
           "enum": [
             "program_id",
             "submitter_donor_id",
-            "primary_site",
-            "vital_status",
-            "survival_time",
-            "cause_of_death"
+            "submitter_primary_diagnosis_id",
+            "submitter_follow_up_id",
+            "interval_of_followup",
+            "disease_status_at_followup",
+            "relapse_type"
           ]
         }
       },
@@ -171,10 +174,8 @@
           "enum": [
             "program_id",
             "submitter_donor_id",
-            "primary_site",
-            "vital_status",
-            "survival_time",
-            "cause_of_death"
+            "age_at_comorbidity_diagnosis",
+            "comorbidity_type_code"
           ]
         }
       }
