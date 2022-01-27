@@ -30,7 +30,17 @@
             "tumour_normal_designation",
             "sample_type"
           ]
-        }
+        },
+        "required": [ 
+          "program_id",
+          "submitter_donor_id",
+          "submitter_specimen_id",
+          "submitter_sample_id",
+          "gender",
+          "specimen_tissue_source",
+          "specimen_type",
+          "sample_type"
+        ]
       },
       "donor": {
         "type": "object",
@@ -43,7 +53,13 @@
             "survival_time",
             "cause_of_death"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "primary_site",
+          "vital_status"
+        ]
       },
       "specimen": {
         "type": "object",
@@ -63,7 +79,15 @@
             "tumour_grade",
             "percent_tumour_cells"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_primary_diagnosis_id",
+          "submitter_specimen_id",
+          "specimen_acquisition_interval",
+          "specimen_anatomic_location"
+        ]
       },
       "primary_diagnosis": {
         "type": "object",
@@ -80,7 +104,15 @@
             "performance_status",
             "laterality"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_primary_diagnosis_id",
+          "age_at_diagnosis",
+          "cancer_type_code",
+          "lymph_nodes_examined_status"
+        ]
       },
       "treatment": {
         "type": "object",
@@ -96,7 +128,14 @@
             "treatment_duration",
             "response_to_treatment"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_primary_diagnosis_id",
+          "submitter_treatment_id",
+          "treatment_type"
+        ]
       },
       "chemotherapy": {
         "type": "object",
@@ -110,7 +149,16 @@
             "cumulative_drug_dosage",
             "chemotherapy_dosage_units"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_treatment_id",
+          "drug_name",
+          "drug_rxnormcui",
+          "cumulative_drug_dosage",
+          "chemotherapy_dosage_units"
+        ]
       },
       "hormone_therapy": {
         "type": "object",
@@ -124,7 +172,16 @@
             "cumulative_drug_dosage",
             "hormone_drug_dosage_units"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_treatment_id",
+          "drug_rxnormcui",
+          "drug_name",
+          "cumulative_drug_dosage",
+          "hormone_drug_dosage_units",
+        ]
       },
       "radiation": {
         "type": "object",
@@ -139,7 +196,17 @@
             "radiation_therapy_dosage",
             "radiation_therapy_fractions"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_treatment_id",
+          "radiation_therapy_modality",
+          "radiation_therapy_type",
+          "anatomical_site_irradiated",
+          "radiation_therapy_dosage",
+          "radiation_therapy_fractions"
+        ]
       },
       "surgery": {
         "type": "object",
@@ -150,9 +217,16 @@
             "submitter_treatment_id",
             "procedure_type",
             "procedure_site",
-            "residua_tumour_classification"
+            "residual_tumour_classification"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_treatment_id",
+          "procedure_type",
+          "procedure_site" 
+        ]
       },
       "follow_up": {
         "type": "object",
@@ -166,7 +240,15 @@
             "disease_status_at_followup",
             "relapse_type"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "submitter_primary_diagnosis_id",
+          "submitter_follow_up_id",
+          "interval_of_followup",
+          "disease_status_at_followup"
+        ]
       },
       "comorbidity": {
         "type": "object",
@@ -177,7 +259,12 @@
             "age_at_comorbidity_diagnosis",
             "comorbidity_type_code"
           ]
-        }
+        },
+        "required": [
+          "program_id",
+          "submitter_donor_id",
+          "comorbidity_type_code"
+        ]
       }
     }
   }
