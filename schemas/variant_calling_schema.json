@@ -5,15 +5,7 @@
     "required": [
       "sample_registration",  
       "donor",
-      "specimen",
-      "primary_diagnosis",
-      "treatment",
-      "chemotherapy",
-      "hormone_therapy",
-      "radiation",
-      "surgery",
-      "follow_up",
-      "comorbidity"
+      "specimen"
     ],
     "properties": {
       "sample_registration": {
@@ -158,7 +150,38 @@
           "drug_rxnormcui",
           "cumulative_drug_dosage",
           "chemotherapy_dosage_units"
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_treatment_id": {
+            "type": "string"
+          },
+          "drug_name": {
+            "type": "string"
+          },
+          "drug_rxnormcui": {
+            "type": "string"
+          },
+          "cumulative_drug_dosage": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "chemotherapy_drug_dosage_units": {
+            "type": "string",
+            "enum": [
+              "mg/m2",
+              "IU/m2",
+              "ug/m2",
+              "g/m2",
+              "mg/kg"
+            ]
+          }
+        }
       },
       "hormone_therapy": {
         "type": "object",
@@ -180,8 +203,39 @@
           "drug_rxnormcui",
           "drug_name",
           "cumulative_drug_dosage",
-          "hormone_drug_dosage_units",
-        ]
+          "hormone_drug_dosage_units"
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_treatment_id": {
+            "type": "string"
+          },
+          "drug_name": {
+            "type": "string"
+          },
+          "drug_rxnormcui": {
+            "type": "string"
+          },
+          "cumulative_drug_dosage": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "hormone_drug_dosage_units": {
+            "type": "string",
+            "enum": [
+              "mg/m2",
+              "IU/m2",
+              "ug/m2",
+              "g/m2",
+              "mg/kg"
+            ]
+          }
+        }
       },
       "radiation": {
         "type": "object",
@@ -206,7 +260,34 @@
           "anatomical_site_irradiated",
           "radiation_therapy_dosage",
           "radiation_therapy_fractions"
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_treatment_id": {
+            "type": "string"
+          },
+          "radiation_therapy_modality": {
+            "type": "string",
+            "enum": [
+              "Electron",
+              "Heavy Ions",
+              "Photon",
+              "Proton"
+            ]
+          },
+          "radiation_therapy_type": {
+            "type": "string",
+            "enum": [
+              "External",
+              "Internal"
+            ]
+          }
+        }
       },
       "surgery": {
         "type": "object",
@@ -226,7 +307,33 @@
           "submitter_treatment_id",
           "procedure_type",
           "procedure_site" 
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_treatment_id": {
+            "type": "string"
+          },
+          "procedure_type": {
+            "type": "string"
+          },
+          "procedure_site": {
+            "type": "string"
+          },
+          "residual_tumour_classification": {
+            "type": "string",
+            "enum": [
+              "RX (presence of residual tumour cannot be assessed)",
+              "R0 (no residual tumour)",
+              "R1 (microscopic residual tumour)",
+              "R2 (macroscopie residual tumour)"
+            ]
+          }
+        }
       },
       "follow_up": {
         "type": "object",
@@ -248,7 +355,47 @@
           "submitter_follow_up_id",
           "interval_of_followup",
           "disease_status_at_followup"
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_primary_diagnosis_id": {
+            "type": "string"
+          },
+          "submitter_follow_up_id": {
+            "type": "string"
+          },
+          "interval_of_follow_up": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "disease_status_at_followup": {
+            "type": "string",
+            "enum": [
+              "Complete remission",
+              "Distant progression",
+              "Loco-regional progression",
+              "No evidence of disease",
+              "Partial remission",
+              "Progression NOS",
+              "Relapse or recurrence",
+              "Stable"
+            ]
+          },
+          "relapse_type": {
+            "type": "string",
+            "enum": [
+              "Distant recurrence/metastasis",
+              "Local recurrence",
+              "Local recurrence and distant metastasis",
+              "Progression (liquid tumours)"
+            ]
+          }
+        }
       },
       "comorbidity": {
         "type": "object",
@@ -264,7 +411,22 @@
           "program_id",
           "submitter_donor_id",
           "comorbidity_type_code"
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "age_at_comorbidity_diagnosis": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "comorbidity_type_code": {
+            "type": "string"
+          }
+        }
       }
     }
   }
