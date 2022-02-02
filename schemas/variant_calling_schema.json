@@ -32,7 +32,100 @@
           "specimen_tissue_source",
           "specimen_type",
           "sample_type"
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_specimen_id": {
+            "type": "string"
+          },
+          "submitter_sample_id": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "Female",
+              "Male",
+              "Other"
+            ]
+          },
+          "specimen_tissue_source": {
+            "type": "string",
+            "enum": [
+              "Blood derived - bone marrow",
+              "Blood derived - peripheral blood",
+              "Blood derived",
+              "Bone marrow",
+              "Bone",
+              "Buccal cell",
+              "Buffy coat",
+              "Cerebellum",
+              "Cerebrospinal fluid",
+              "Endometrium",
+              "Esophagus",
+              "Intestine",
+              "Lymph node",
+              "Mononuclear cells from bone marrow",
+              "Other",
+              "Plasma",
+              "Pleural effusion",
+              "Saliva",
+              "Serum",
+              "Skin",
+              "Solid tissue",
+              "Spleen",
+              "Sputum",
+              "Stomach",
+              "Tonsil",
+              "Urine"
+            ]
+          },
+          "specimen_type": {
+            "type": "string",
+            "enum": [
+              "Cell line - derived from normal",
+              "Cell line - derived from tumour",
+              "Cell line - derived from xenograft tumour",
+              "Metastatic tumour - additional metastatic",
+              "Metastatic tumour - metastasis local to lymph node",
+              "Metastatic tumour - metastasis to distant location",
+              "Metastatic tumour",
+              "Normal - tissue adjacent to primary tumour",
+              "Normal",
+              "Primary tumour - additional new primary",
+              "Primary tumour - adjacent to normal",
+              "Primary tumour",
+              "Recurrent tumour",
+              "Xenograft - derived from primary tumour",
+              "Xenograft - derived from tumour cell line"
+            ]
+          },
+          "tumour_normal_designation": {
+            "type": "string",
+            "enum": [
+              "Normal",
+              "Tumour"
+            ]
+          },
+          "sample_type": {
+            "type": "string",
+            "enum": [
+              "Amplified DNA",
+              "ctDNA",
+              "Other DNA enrichments",
+              "Other RNA fractions",
+              "polyA+ RNA",
+              "Ribo-Zero RNA",
+              "Total DNA",
+              "Total RNA"
+            ]
+          }
+        }
       },
       "donor": {
         "type": "object",
