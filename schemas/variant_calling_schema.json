@@ -127,7 +127,64 @@
           "submitter_primary_diagnosis_id",
           "submitter_treatment_id",
           "treatment_type"
-        ]
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "submitter_donor_id": {
+            "type": "string"
+          },
+          "submitter_primary_diagnosis_id": {
+            "type": "string"
+          },
+          "submitter_treatment_id": {
+            "type": "string"
+          },
+          "treatment_type": {
+            "type": "string",
+            "enum": [
+              "Ablation",
+              "Bone marrow transplant",
+              "Chemotherapy",
+              "Endoscopic therapy",
+              "Hormonal therapy",
+              "Immunotherapy",
+              "No treatment",
+              "Other targeting molecular therapy",
+              "Photodynamic therapy",
+              "Radiation therapy",
+              "Stem cell transplant",
+              "Surgery"
+            ]
+          },
+          "treatment_intent": {
+            "type": "string",
+            "enum": [
+              "Curative",
+              "Palliative",
+              "Unknown"
+            ]
+          },
+          "treatment_start_interval": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "treatment_duration": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "response_to_treatment": {
+            "type": "string",
+            "enum": [
+              "Complete response",
+              "Disease progression",
+              "NED",
+              "Partial response",
+              "Stable disease"
+            ]
+          }
+        }
       },
       "chemotherapy": {
         "type": "object",
