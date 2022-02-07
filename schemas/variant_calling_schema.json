@@ -1,9 +1,10 @@
 {
-  "name": "variant_calling",
+  "name": "variant_calling_eucancan",
   "schema": {
     "type": "object",
     "required": [
-      "experiment",  
+      "experiment",
+      "variant_class",  
       "donor",
       "specimen"
     ],
@@ -46,6 +47,13 @@
             ]
           }
         }
+      },
+      "variant_class": {
+        "type": "string",
+        "enum": [
+          "Germline",
+          "Somatic"
+        ]
       },
       "donor": {
         "type": "object",
