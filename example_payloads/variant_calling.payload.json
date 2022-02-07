@@ -1,0 +1,124 @@
+{
+  "studyId" : "TEST-PR",
+  "analysisType" : {
+    "name" : "variant_calling"
+  },
+  "samples" : [
+    {
+      "submitterSampleId" : "COLO-829",
+      "sampleType" : "Total DNA",
+      "matchedNormalSubmitterSampleId" : "COLO-829-BL",
+      "specimen" : {
+        "submitterSpecimenId" : "COLO-829",
+        "tumourNormalDesignation" : "Tumour",
+        "specimenTissueSource" : "Blood derived",
+        "specimenType" : "Cell line - derived from tumour"
+      },
+      "donor" : {
+        "submitterDonorId" : "COLO-829",
+        "gender" : "Female"
+      }
+    }
+  ],
+  "files" : [
+    {
+      "info" : {
+        "analysis_tools" : [
+                    "GATK-Mutect2"
+                ],
+        "data_category" : "Simple Nucleotide Variation"
+      },
+      "analysisId" : "452737be-ba9c-40a5-a737-beba9cb0a54c",
+      "fileName" : "TEST-PR.DO250183.SA610229.wxs.20210324.gatk-mutect2.somatic.snv.vcf.gz",
+      "fileType" : "VCF",
+      "fileMd5sum" : "c1f21edb2cf809de34776b08fd443bd1",
+      "fileSize" : 32313,
+      "fileAccess" : "controlled",
+      "dataType" : "Raw SNV Calls"
+    },
+    {
+      "info" : {
+        "analysis_tools" : [
+                    "GATK-Mutect2"
+                ],
+        "data_category" : "Simple Nucleotide Variation"
+      },
+      "analysisId" : "452737be-ba9c-40a5-a737-beba9cb0a54c",
+      "fileName" : "TEST-PR.DO250183.SA610229.wxs.20210324.gatk-mutect2.somatic.snv.vcf.gz.tbi",
+      "fileType" : "TBI",
+      "fileMd5sum" : "2aba9311c7351cca381a91acbee293f0",
+      "fileSize" : 215,
+      "fileAccess" : "controlled",
+      "dataType" : "VCF Index"
+    }
+  ],
+  "experiment" : {
+    "experimental_strategy" : "WXS",
+    "platform" : "ILLUMINA"
+  },
+  "donor": {
+    "submitter_donor_id": "",
+    "primary_site": "",
+    "vital_status": "",
+    "survival_time": "",
+    "cause_of_death": "",
+    "primary_diagnosis": [
+      {
+        "submitter_primary_diagnosis_id": "",
+        "age_at_diagnosis": "",
+        "cancer_type_code": "",
+        "clinical_tumour_staging_system": "",
+        "clinical_stage_group": "",
+        "lymph_nodes_examined_status": "",
+        "performance_status": "",
+        "laterality": "",
+        "treatment": [
+          {
+            "submitter_treatment_id": "",
+            "treatment_type": "Chemotherapy",
+            "treatment_intent": "",
+            "treatment_start_interval": "",
+            "treatment_duration": "",
+            "response_to_treatment": "",
+            "chemotherapy": [
+              {
+                "drug_name": "drug1",
+                "drug_rxnormcui": "drug1_rxid",
+                "cumulative_drug_dosage": 2,
+                "chemotherapy_dosage_units": "IU/m2"
+              }
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "submitter_follow_up_id": "",
+            "interval_of_followup": "",
+            "disease_status_at_followup": "",
+            "relapse_type": "",
+            "submitter_treatment_id": ""
+          }
+        ]
+      }
+    ],
+    "comorbidity": [
+      {
+        "age_at_comorbidity_diagnosis": "",
+        "comorbidity_type_code": ""
+      } 
+    ]
+  },
+  "specimen": {
+    "submitter_specimen_id": "",
+    "submitter_primary_diagnosis_id": "",
+    "specimen_acquisition_interval": "",
+    "specimen_anatomic_location": "",
+    "specimen_laterality": "",
+    "tumour_histological_type": "",
+    "pathological_tumour_staging_system": "",
+    "pathological_stage_group": "",
+    "tumour_grading_system": "",
+    "tumour_grade": "",
+    "percent_tumour_cells": ""
+  }
+}
