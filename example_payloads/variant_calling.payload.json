@@ -62,23 +62,55 @@
     "vital_status": "",
     "survival_time": "",
     "cause_of_death": "",
+    "primary_diagnosis": [
+      {
+        "submitter_primary_diagnosis_id": "",
+        "age_at_diagnosis": "",
+        "cancer_type_code": "",
+        "clinical_tumour_staging_system": "",
+        "clinical_stage_group": "",
+        "lymph_nodes_examined_status": "",
+        "performance_status": "",
+        "laterality": "",
+        "treatment": [
+          {
+            "submitter_treatment_id": "",
+            "treatment_type": "Chemotherapy",
+            "treatment_intent": "",
+            "treatment_start_interval": "",
+            "treatment_duration": "",
+            "response_to_treatment": "",
+            "chemotherapy": [
+              {
+                "drug_name": "drug1",
+                "drug_rxnormcui": "drug1_rxid",
+                "cumulative_drug_dosage": 2,
+                "chemotherapy_dosage_units": "IU/m2"
+              }
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "submitter_follow_up_id": "",
+            "interval_of_followup": "",
+            "disease_status_at_followup": "",
+            "relapse_type": "",
+            "submitter_treatment_id": ""
+          }
+        ]
+      }
+    ],
     "comorbidity": [
       {
         "age_at_comorbidity_diagnosis": "",
         "comorbidity_type_code": ""
       } 
-    ],
-    "exposure": {
-
-    },
-    "family_history": [
-      {
-        
-      }
     ]
   },
   "specimen": {
     "submitter_specimen_id": "",
+    "submitter_primary_diagnosis_id": "",
     "specimen_acquisition_interval": "",
     "specimen_anatomic_location": "",
     "specimen_laterality": "",
@@ -87,43 +119,6 @@
     "pathological_stage_group": "",
     "tumour_grading_system": "",
     "tumour_grade": "",
-    "percent_tumour_cells": "",
-    "primary_diagnosis": {
-      "submitter_primary_diagnosis_id": "",
-      "age_at_diagnosis": "",
-      "cancer_type_code": "",
-      "clinical_tumour_staging_system": "",
-      "clinical_stage_group": "",
-      "lymph_nodes_examined_status": "",
-      "performance_status": "",
-      "laterality": "",
-      "treatment": [
-        {
-          "submitter_treatment_id": "",
-          "treatment_type": "Chemotherapy",
-          "treatment_intent": "",
-          "treatment_start_interval": "",
-          "treatment_duration": "",
-          "response_to_treatment": "",
-          "chemotherapy": [
-            {
-              "drug_name": "",
-              "drug_rxnormcui": "",
-              "cumulative_drug_dosage": "",
-              "chemotherapy_dosage_units": ""
-            }
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "submitter_follow_up_id": "",
-          "interval_of_followup": "",
-          "disease_status_at_followup": "",
-          "relapse_type": "",
-          "submitter_treatment_id": ""
-        }
-      ]
-    }
+    "percent_tumour_cells": ""
   }
 }
