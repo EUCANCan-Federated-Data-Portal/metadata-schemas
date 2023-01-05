@@ -24,11 +24,10 @@
     {
       "info" : {
         "analysis_tools" : [
-                    "GATK-Mutect2"
-                ],
+          "GATK-Mutect2"
+        ],
         "data_category" : "Simple Nucleotide Variation"
       },
-      "analysisId" : "452737be-ba9c-40a5-a737-beba9cb0a54c",
       "fileName" : "TEST-PR.DO250183.SA610229.wxs.20210324.gatk-mutect2.somatic.snv.vcf.gz",
       "fileType" : "VCF",
       "fileMd5sum" : "c1f21edb2cf809de34776b08fd443bd1",
@@ -39,11 +38,10 @@
     {
       "info" : {
         "analysis_tools" : [
-                    "GATK-Mutect2"
-                ],
+          "GATK-Mutect2"
+        ],
         "data_category" : "Simple Nucleotide Variation"
       },
-      "analysisId" : "452737be-ba9c-40a5-a737-beba9cb0a54c",
       "fileName" : "TEST-PR.DO250183.SA610229.wxs.20210324.gatk-mutect2.somatic.snv.vcf.gz.tbi",
       "fileType" : "TBI",
       "fileMd5sum" : "2aba9311c7351cca381a91acbee293f0",
@@ -52,16 +50,34 @@
       "dataType" : "VCF Index"
     }
   ],
+  "workflow": {
+    "workflow_name": "GATK Mutect2 Variant Calling",
+    "workflow_version": "0.1.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "wes-d58a83f3d71d402eb52130b19ea9c8b0",
+    "session_id": "a42f4cca-fc8b-4f19-95e1-fe8de3cd7a80",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_alignment",
+        "tumour_analysis_id": "f31834bc-fc8b-4bec-9834-bcfc8babecf4"
+      },
+      {
+        "analysis_type": "sequencing_alignment",
+        "normal_analysis_id": "e6207a9d-d134-486f-a07a-9dd134486f82"
+      }
+    ]
+  },
   "experiment" : {
     "experimental_strategy" : "WXS",
     "platform" : "ILLUMINA"
   },
+  "variant_class": "Somatic",
   "donor": {
-    "submitter_donor_id": "",
-    "primary_site": "",
-    "vital_status": "",
-    "survival_time": "",
-    "cause_of_death": "",
+    "submitter_donor_id": "COLO-829",
+    "primary_site": "Bladder",
+    "vital_status": "Deceased",
+    "survival_time": "1200",
+    "cause_of_death": "Died of other reasons",
     "primary_diagnosis": [
       {
         "submitter_primary_diagnosis_id": "",
@@ -119,6 +135,7 @@
     "pathological_stage_group": "",
     "tumour_grading_system": "",
     "tumour_grade": "",
-    "percent_tumour_cells": ""
+    "percent_tumour_cells": "",
+    "reference_pathology_confirmed": "Yes"
   }
 }
