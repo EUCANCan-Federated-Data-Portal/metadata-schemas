@@ -24,10 +24,7 @@
         },
         "required": [
           "workflow_name",
-          "workflow_short_name",
-          "workflow_version",
           "genome_build",
-          "run_id",
           "inputs"
         ],
         "type": "object",
@@ -445,7 +442,7 @@
                       "submitter_treatment_id": {
                         "type": "string"
                       },
-                      "interval_of_follow_up": {
+                      "interval_of_followup": {
                         "type": "integer",
                         "minimum": 0
                       },
