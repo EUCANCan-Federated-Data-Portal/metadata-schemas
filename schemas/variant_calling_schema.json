@@ -573,7 +573,7 @@
                               "type": "integer",
                               "minimum": 0
                             },
-                            "chemotherapy_drug_dosage_units": {
+                            "chemotherapy_dosage_units": {
                               "type": "string",
                               "enum": [
                                 "mg/m2",
@@ -686,6 +686,9 @@
                             },
                             "radiation_therapy_dosage": {
                               "type": "number"
+                            },
+                            "radiation_therapy_fractions": {
+                              "type": "integer"
                             }
                           }
                         }
