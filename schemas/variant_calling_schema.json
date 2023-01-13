@@ -67,7 +67,7 @@
                 }
               }
             },
-            "minItems": 2,
+            "minItems": 1,
             "maxItems": 2
           },
           "run_id": {
@@ -135,9 +135,7 @@
             "survival_time",
             "cause_of_death",
             "primary_diagnosis",
-            "comorbidity",
-            "exposure",
-            "family_history"
+            "comorbidity"
           ]
         },
         "required": [
